@@ -1,11 +1,11 @@
-const express = require('express')
+const express = require("express")
 const server = express()
-const filmes = require('./src/data/fimes.json')
+const filmes = require("./src/data/fimes.json")
 
-server.get('/filmes', (req, res) => {
-    return res.json(filmes)
+server.get("/filmes", (req, res) => {
+  return res.json(filmes)
 })
 
-server.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000')
+server.listen(8000, () => {
+  console.log("Servidor rodando na porta 8000")
 })

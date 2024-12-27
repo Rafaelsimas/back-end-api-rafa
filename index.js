@@ -3,7 +3,7 @@ const server = express()
 const filmes = require("./src/data/fimes.json")
 
 server.get("/filmes", (req, res) => {
-  return res.json(filmes)
+  return res.send(filmes)
 })
 
 server.listen(8000, () => {
